@@ -1,7 +1,7 @@
 body {  
   background-image:  url('http://i.imgur.com/eyjsU6x.png');
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: bottom left center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -14,13 +14,21 @@ body {
 #quotes{
   font-size: 25px;  
   color: #fffafa;
-  margin-top: 6em;
+  margin-top: 17em;
   margin-bottom: 15px;
     animation: fadein 3s;
     -moz-animation: fadein 3s; /* Firefox */
     -webkit-animation: fadein 3s; /* Safari and Chrome */
     -o-animation: fadein 3s; /* Opera */
 }
+
+@media screen and (max-width: 1024px){
+    #quotes{
+      margin-top:10em;
+    }
+}
+
+
 @keyframes fadein {
     from {
         opacity:0;
