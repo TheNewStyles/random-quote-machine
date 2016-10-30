@@ -19,7 +19,7 @@ body {
 .buttons{
   position: absolute;  
   width: 100%;
-  top: 75%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -27,8 +27,7 @@ body {
 #quotes{
   font-size: 25px;  
   color: #DBFFFF;
-  top: 50%;
-  padding-top: 40%;
+  padding-top: 30%;
   min-height: 120px;  
   margin-bottom: 15px;
     animation: fadein 4s;
@@ -52,6 +51,9 @@ body {
 @media screen and (max-width: 1024px){
     #quotes{
       margin-top:3em;
+    }
+    .buttons{
+      top:  75%;
     }
 }
 
