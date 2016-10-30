@@ -25,10 +25,11 @@ body {
 }
 
 #quotes{
-  font-size: 25px;  
+  font-size: 30px;  
   color: #DBFFFF;
   padding-top: 30%;
-  min-height: 120px;  
+  min-height: 120px; 
+  max-height: 250px; 
   margin-bottom: 15px;
     animation: fadein 4s;
     -moz-animation: fadein 4s; /* Firefox */
@@ -50,10 +51,10 @@ body {
 
 @media screen and (max-width: 1024px){
     #quotes{
-      margin-top:3em;
+      margin-top:2em;
     }
     .buttons{
-      top:  75%;
+      top:  85%;
     }
 }
 
