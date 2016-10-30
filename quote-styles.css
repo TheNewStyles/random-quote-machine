@@ -37,6 +37,10 @@ body {
     -o-animation: fadein 4s; /* Opera */
 }
 
+.btn{
+  font-size: 20px;
+}
+
 .btn-outline-primary {
     background-color: transparent;
     border-style: solid;
