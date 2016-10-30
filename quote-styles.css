@@ -1,19 +1,27 @@
-html{
+/* html{
   height: 100%;
-}
+} */
 
 body {  
-  background-image:  url('revenant-background.jpg');
+  background-image:  url('imgs/revenant-background.jpg');
   background-repeat: no-repeat;
   background-position: bottom left center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
-  min-height:500px;
+  background-size: cover;  
   font-family: 'Carrois Gothic SC', sans-serif;
   text-align: center;  
-  height: 100%;
+  height: 100vh;
+  min-height: 100vh;
+}
+
+.buttons{
+  position: absolute;  
+  width: 100%;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #quotes{
@@ -72,26 +80,21 @@ body {
         opacity:1;
     }
 }
-@-o-keyframes fadein { /* Opera */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity: 1;
-    }
-}
 
-#quote-button {
-  margin-right: 45px;
+#quote-button {  
     cursor: pointer;
     cursor: hand;
     z-index: 10;
 }
 
+#tweet-link{
+  margin-right: 15%;
+}
+
 #snow{
 	background: none;
 	font-family: Androgyne;
-	background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), url('http://www.wearewebstars.dk/codepen/img//s2.png'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
+	background-image: url('imgs/snow-1.png'), url('imgs/snow-2.png'), url('imgs/snow-3.png');
 	height: 100%;
 	left: 0;
 	position: absolute;
