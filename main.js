@@ -1,21 +1,12 @@
-////////////////// Nav Menu  //////////////////
-function openNav(){
-  document.getElementById("nav").style.height= "100%";
-}
-
-function closeNav(){
-  document.getElementById("nav").style.height = "0%";
-}
-
 $(document).ready(function(){
-  
+
    $("#quote-button").click(function(){  
 
    	    var btn = $(this);
 	    btn.prop('disabled',true);
-	    window.setTimeout(function(){ 
-	        btn.prop('disabled',false);
-	    },1000);
+	    window.setTimeout(function() {
+	        btn.prop('disabled', false);
+	    } , 1000);
 
       //quotes array    
       var quotes = [
@@ -29,13 +20,12 @@ $(document).ready(function(){
         "&ldquo;God giveth, God taketh away.&rdquo;<br/> - John Fitzgerald",
         "&ldquo;At least he heard me.&rdquo;<br/> - Hawk"        
       ];
-      
-      // get random id from array  
+
       var random = quotes[Math.floor( Math.random() * quotes.length)];
-	  // add text into #quotes id in html      
       $('#quotes').hide().html(random).fadeIn(1000);
 	  $('#quote-button').blur();
 	  // tweet the quote
-	  $("#tweet-link").attr("href", 'https://twitter.com/intent/tweet?text=' + random);      
-    });     
+	  $("#tweet-link").attr("href" , 'https://twitter.com/intent/tweet?text=' + random);
+    });
+
 });
